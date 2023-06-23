@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1dfdd;
+  color: #09131f;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px #daa3a9;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+
+  > .boxLeft,
+  .boxRight {
+    background-color: #daa3a9;
+    border-radius: 10px;
+    width: 500px;
+    height: 600px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > .userAdd {
+      background-color: #09131f;
+      border-radius: 10px;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      > h2 {
+        color: #f1dfdd;
+        margin-top: 75px;
+        text-transform: uppercase;
+      }
+
+      > input {
+        width: 80%;
+        outline: none;
+        border: none;
+        margin: 20px 10px;
+        padding: 15px 10px;
+        border-radius: 10px;
+        &:focus-within {
+          box-shadow: 0px 0px 7px rgba(68, 64, 64, 0.7);
+        }
+      }
+      > button {
+        background-color: #daa3a9;
+        border: 0;
+        border-radius: 10px;
+        width: 130px;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 40px;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > svg {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  > .boxRight {
+    width: 1000px;
+
+    > .infoBox {
+      background-color: #09131f;
+      padding: 30px;
+      border-radius: 10px;
+      > tbody {
+        > .headings,
+        .userData {
+          > td,
+          th {
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            background-color: #f1dfdd;
+            padding: 5px 15px;
+            border-radius: 3px;
+            > button {
+              background-color: rgba(255, 255, 255, 0);
+              border: none;
+
+              cursor: pointer;
+              > svg {
+                font-size: 1.5rem;
+                cursor: pointer;
+              }
+            }
+          }
+          > td {
+            width: 309px;
+          }
+          > th {
+            width: 73px;
+          }
+        }
+        > .headings {
+          > td {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
